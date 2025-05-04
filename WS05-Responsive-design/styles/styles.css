@@ -137,7 +137,7 @@ content: '“';
     display: flex;
     flex-wrap: wrap;
 }
--column {
+.column {
     flex: 1;
     padding: 10px;
 }
@@ -164,7 +164,7 @@ content: '“';
         background-color: lightblue;
     }
 }
-.responsive-nav {
+.responsive-nav .nav-list {
     display: flex;
     list-style: none;
 }
