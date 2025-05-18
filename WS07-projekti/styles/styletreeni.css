@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #120d0d;
+    color: rgb(23, 152, 60);
+    padding: 20px;
+    font: italic bold 20px/30px Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+nav {
+    background-image: url('../kuvat/dumbell.jpg');
+    background-size: 100px;
+    background-repeat: repeat-y;
+    background-position: left top;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    color: #9d0808;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  center/cover no-repeat;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: white;
+}
+
+.intro-text h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.intro-text p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 3rem 0;
+    background-color: var(--secondary-color);
+}
+
+.highlight-box {
+    background-color:rgb(132, 118, 118);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-box:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-box p {
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+.Push-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.workout-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.workout-card {
+    background-color: rgb(132, 118, 118);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+}
+
+.workout-card-header {
+    background-color: black;
+    color: rgb(20, 143, 53);
+    padding: 1rem;
+}
+
+.workout-card-body {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.workout-card-body ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+}
+
+.workout-card-body li {
+    margin-bottom: 0.5rem;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .highlight-box {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .workout-card {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+section:nth-child(odd) {
+    background-color: #838181;
+}
+
+section:nth-child(even) {
+    background-color: #3c3a3a;
+}
+
+h2 {
+    background-color: #4cf03d; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    border-radius: 5px; 
+}
+
+
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+h2 {
+    text-align: center; 
+    border-bottom: 3px solid #ff5722; 
+    padding-bottom: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 500px; /* Rajoita korkeutta */
+    object-fit: cover; /* Säilytä mittasuhteet */
+}

@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #120d0d;
+    color: rgb(23, 152, 60);
+    padding: 20px;
+    font: italic bold 20px/30px Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+nav {
+    background-image: url('../kuvat/dumbell.jpg');
+    background-size: 100px;
+    background-repeat: repeat-y;
+    background-position: left top;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    color: #656f09;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+h1 {
+  text-align: center;
+  color: #51a0ee;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #09131e;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: rgb(95, 94, 94);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+strong {
+  color: #333;
+}
+
+h2 + table caption {
+  color: #2980b9;
+}
+
+h2 + table + h2 + table caption {
+  color: #16a085;
+}
+
+h2 + table + h2 + table + h2 + table caption {
+  color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  caption {
+    font-size: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  center/cover no-repeat;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.hero-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
